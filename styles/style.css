@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Minecraft'; /* Vybrané jméno */
+  src: url('/assets/Monocraft-nerd-fonts-patched.ttf') format('truetype'); /* Cesta k souboru */
+}
+
+h1, h2, h3, p{
+    font-family: 'Minecraft';
+    text-align: center;
+}
+
+h1{
+    font-size: 90px;
+    margin-bottom: 1%;
+}
+
+p{
+    font-size: 20px;
+}
