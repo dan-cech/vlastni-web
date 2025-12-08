@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Minecraft'; /* Vybrané jméno */
-  src: url('/assets/Monocraft-nerd-fonts-patched.ttf') format('truetype'); /* Cesta k souboru */
+  font-family: 'Minecraft'; /* AI Generovaný */
+  src: url('../assets/Monocraft-nerd-fonts-patched.ttf') format('truetype'); /* AI Generovaný */
 }
 
 h1, h2, h3, p{
