@@ -1,6 +1,20 @@
+body {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Minecraft'; /* AI Generovaný */
   src: url('../assets/Monocraft-nerd-fonts-patched.ttf') format('truetype'); /* AI Generovaný */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
 }
 
 h1, h2, h3, p{
