@@ -1,94 +1,166 @@
-body {
-    margin: 0;
-    font-family: 'Minecraft';
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 @font-face {
   font-family: 'Minecraft'; /* AI Generovaný */
   src: url('../assets/Monocraft-nerd-fonts-patched.ttf') format('truetype'); /* AI Generovaný */
 }
 
+h1, h2, h3, h4, p, a, li, div {
+  font-family: 'Minecraft';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --panel: #1c1c1c;
+  --border: #000;
+  --mc-green: #55ff55;
+}
+
+body {
+  margin: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #1a1a1a 0px,
+      #1a1a1a 32px,
+      #171717 32px,
+      #171717 64px
+    );
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo {
-    width: 25%;
-    display: block;
-    margin: 0 auto;
-    margin-top: -1%;
-    transition: 0.1s;
+  z-index: 5;
 }
 
-.logo:hover{
-    transform: scale(1.05);
+/* HERO */
+.mc-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background obrázek */
+  background-image: url('/assets/background-minecraft.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.banner{
-    width: 100%;
-    height: 25%;
+.mc-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
-h1, h2, h3, p{
-    font-family: 'Minecraft';
-    text-align: center;
+.mc-window {
+  position: relative;
+  z-index: 1; /* logo bude nad overlay */
+  background: var(--panel);
+  padding: 40px 60px;
+  border: 4px solid #2a2a2a;
+  box-shadow: inset 0 0 0 4px var(--border);
+  text-align: center;
 }
 
-h1{
-    font-size: 90px;
-    margin-bottom: 1%;
+.mc-window h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: var(--mc-green);
+  margin-bottom: 20px;
 }
 
-p{
-    font-size: 20px;
+/* MENU */
+.mc-menu {
+  position: sticky;
+  top: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 14px;
+  border-bottom: 4px solid #222;
 }
 
-hr {
-    border-width: 10px;
-    border-style: solid;
-    border-color: rgb(4, 35, 209);
+.mc-menu a {
+  color: var(--mc-green);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-
-header {
-    background: #2d3c7d;
-    padding: 30px;
-    text-align: center;
+/* SECTIONS */
+.mc-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 40px;
+  background: var(--panel);
+  border: 4px solid #2a2a2a;
+  box-shadow: inset 0 0 0 4px var(--border);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+.mc-section h2 {
+  margin-top: 0;
+  color: var(--mc-green);
 }
 
-header p {
-    font-size: 18px;
+/* ROOMS GRID */
+.mc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
 }
 
-section {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
+.mc-tile {
+  padding: 30px;
+  background: #2a2a2a;
+  border: 4px solid #000;
+  text-align: center;
 }
 
-
-.info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.mc-tile.secret {
+  border-style: dashed;
+  color: #aaa;
 }
 
-.box {
-    background: #2a2a2a;
-    padding: 20px;
-    border-radius: 10px;
+/* LIST */
+.mc-list {
+  list-style: square;
 }
 
-footer {
-    background: #111;
-    text-align: center;
-    padding: 20px;
-    color: #aaa;
+/* GALLERY */
+.mc-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.block {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 4px solid #000;
+}
+
+.grass {
+  background: linear-gradient(#3c8f3c 35%, #7a5a2b 35%);
+}
+
+.stone {
+  background: #777;
+}
+
+.dirt {
+  background: #7a5a2b;
+}
+
+/* FOOTER */
+.mc-footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  border-top: 4px solid #222;
+  color: #aaa;
 }

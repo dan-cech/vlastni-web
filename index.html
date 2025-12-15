@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Náš Minecraft Server</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Base Showcase</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-    
-<header>
-    <img src="assets/educraftnet.png" class="logo">
-    <p>Survival server pro kamarády i veřejnost</p>
-    <p><strong>IP:</strong> mc.naseserver.cz</p>
+
+<header class="mc-hero">
+
+    <img class="logo" src="assets/educraftnet.png">
+
 </header>
-<img class="banner" src="assets/background-minecraft.jpg">
-<section>
-    <h2>O serveru</h2>
-    <p>
-        Náš Minecraft server vznikl jako projekt skupiny kamarádů, kteří si chtěli
-        zahrát survival bez toxicity. Server je otevřený všem hráčům,
-        kteří chtějí stavět, bojovat a bavit se.
-    </p>
+
+<nav class="mc-menu">
+  <a href="#base">Základna</a>
+  <a href="#rooms">Místnosti</a>
+  <a href="#farms">Farmy</a>
+  <a href="#gallery">Galerie</a>
+</nav>
+
+<section id="base" class="mc-section">
+  <h2>O základně</h2>
+  <p>
+    Základna se nachází na malém ostrůvku nedaleko od spawnu. Ostrov je propojuje velký kamenný most. Oblast je z většiny tvořena stromy a faunou.
+  </p>
 </section>
 
-<section>
-    <h2>Informace o serveru</h2>
-    <div class="info">
-        <div class="box">
-            <strong>Verze</strong><br>
-            1.20.x
-        </div>
-        <div class="box">
-            <strong>Typ</strong><br>
-            Survival / SMP
-        </div>
-        <div class="box">
-            <strong>Max hráčů</strong><br>
-            20
-        </div>
-        <div class="box">
-            <strong>Pluginy</strong><br>
-            EssentialsX, WorldEdit
-        </div>
-    </div>
+<section id="rooms" class="mc-section">
+  <h2>Hlavní části</h2>
+  <div class="mc-grid">
+    <div class="mc-tile">Zvonice</div>
+    <div class="mc-tile">Obývací část</div>
+    <div class="mc-tile">Mini-sklad</div>
+    <div class="mc-tile secret">Větrné mlýny</div>
+  </div>
 </section>
 
-<section>
-    <h2>Pravidla</h2>
-    <ul>
-        <li>Zákaz griefingu</li>
-        <li>Zákaz cheatů a hacků</li>
-        <li>Respektuj ostatní hráče</li>
-        <li>Poslouchej adminy</li>
-    </ul>
+<section id="farms" class="mc-section">
+  <h2>Farmy</h2>
+  <h3>Nejedná se o ekonomicky silnou základnu ale to neva :)</h3>
+  <ul class="mc-list">
+    <li>Iron farma</li>
+    <li>Food farma</li>
+    <li>XP / Mob farma</li>
+  </ul>
 </section>
 
-<section>
-    <h2>Admin tým</h2>
-    <ul>
-        <li>👑 Majitel: Steve</li>
-        <li>🛡️ Admin: Alex</li>
-        <li>🧱 Builder: Herobrine</li>
-    </ul>
+<section id="gallery" class="mc-section">
+  <h2>Galerie</h2>
+  <div class="mc-gallery">
+    <div class="block grass">Exteriér</div>
+    <div class="block stone">Interiér</div>
+    <div class="block dirt">Farmy</div>
+  </div>
 </section>
 
-<section>
-    <h2>Jak se připojit</h2>
-    <ol>
-        <li>Otevři Minecraft</li>
-        <li>Klikni na Multiplayer</li>
-        <li>Přidej server</li>
-        <li>Zadej IP: <strong>mc.naseserver.cz</strong></li>
-    </ol>
-</section>
-
-<footer>
-    © 2025 Náš Minecraft Server | Školní projekt
+<footer class="mc-footer">
+  <p>⛏ Postaveno v survivalu • 2025</p>
 </footer>
 
 </body>
 </html>
+
