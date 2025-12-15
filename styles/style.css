@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/assets/background-minecraft.jpg');
+  background-image: url('../assets/background-minecraft.jpg');
   background-size: cover;
   background-position: center;
 }
